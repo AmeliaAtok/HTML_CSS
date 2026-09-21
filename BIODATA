@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata Amelia</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+
+<header>
+    <h1>Data Diri Saya</h1>
+    <p>Mahasiswa Informatika</p>
+</header>
+
+<div class="container">
+
+    <div class="card">
+
+        <div class="foto">
+            <img src="Amell.jpeg" alt="Foto Amelia" width="350" height="350">
+        </div>
+
+        <h2>Amelia Melandia Funan Atok</h2>
+
+        <table>
+            <tr>
+                <td>Nama :</td>
+                <td>Amelia Melandia Funan Atok</td>
+            </tr>
+
+            <tr>
+                <td>Biasa di panggil :</td>
+                <td>Amel</td>
+            </tr>
+
+            <tr>
+                <td>NIM :</td>
+                <td>255314151</td>
+            </tr>
+
+            <tr>
+                <td>Tempat Lahir :</td>
+                <td>Halilulik</td>
+            </tr>
+
+            <tr>
+                <td>Tanggal Lahir :</td>
+                <td>01 Mei 2006</td>
+            </tr>
+
+            <tr>
+                <td>Program Studi :</td>
+                <td>Informatika</td>
+            </tr>
+
+            <tr>
+                <td>Fakultas :</td>
+                <td>Sains dan Teknologi</td>
+            </tr>
+
+            <tr>
+                <td>Universitas :  </td>
+                <td>Universitas Sanata Dharma</td>
+            </tr>
+        </table>
+
+    </div>
+
+</div>
+
+<footer>
+    <p>Profil Amelia - 2026</p>
+</footer>
+
+ <section id="jadwal">
+
+            <h2>Jadwal Mata Kuliah</h2>
+
+            <table class="jadwal">
+
+                <tr>
+                    <th>No</th>
+                    <th>Kode</th>
+                    <th>Nama Mata Kuliah</th>
+                    <th>Kelas</th>
+                    <th>SKS</th>
+                    <th>Hari</th>
+                    <th>Jam</th>
+                </tr>
+
+                <tr>
+                    <td>1</td>
+                    <td>MATS32W</td>
+                    <td>Aljabar Linear</td>
+                    <td>B</td>
+                    <td>2</td>
+                    <td>Jumat</td>
+                    <td>07:00 - 08:50</td>
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td>SNET31W</td>
+                    <td>Internet dan Aplikasinya</td>
+                    <td>F</td>
+                    <td>3</td>
+                    <td>Kamis</td>
+                    <td>07:00 - 09:50</td>
+                </tr>
+
+                <tr>
+                    <td>3</td>
+                    <td>DAIS31W</td>
+                    <td>Manajemen Data</td>
+                    <td>E</td>
+                    <td>3</td>
+                    <td>Jumat</td>
+                    <td>13:00 - 14:50</td>
+                </tr>
+
+                <tr>
+                    <td>4</td>
+                    <td>MATS31W</td>
+                    <td>Metode Numerik</td>
+                    <td>B</td>
+                    <td>2</td>
+                    <td>Kamis</td>
+                    <td>13:00 - 14:50</td>
+                </tr>
+
+                <tr>
+                    <td>5</td>
+                    <td>DAIS32W</td>
+                    <td>Pembelajaran Mesin</td>
+                    <td>D</td>
+                    <td>4</td>
+                    <td>Selasa</td>
+                    <td>10:00 - 12:50</td>
+                </tr>
+
+                <tr>
+                    <td>6</td>
+                    <td>PROG31W</td>
+                    <td>Pemrograman Berbasis Web</td>
+                    <td>B</td>
+                    <td>3</td>
+                    <td>Selasa</td>
+                    <td>13:00 - 14:50</td>
+                </tr>
+
+                <tr>
+                    <td>7</td>
+                    <td>MATS21W</td>
+                    <td>Probabilitas Lanjut</td>
+                    <td>D</td>
+                    <td>2</td>
+                    <td>Senin</td>
+                    <td>10:00 - 11:50</td>
+                </tr>
+
+                <tr>
+                    <td>8</td>
+                    <td>DAIS21W</td>
+                    <td>Sistem Cerdas</td>
+                    <td>D</td>
+                    <td>3</td>
+                    <td>Senin</td>
+                    <td>13:00 - 15:50</td>
+                </tr>
+
+            </table>
+
+        </section>
+
+    </div>
+
+<section id="saudara">
+
+            <h2>Data Saudara</h2>
+
+            <div class="saudara-info">
+
+                <p class="jumlah">
+                    Anak ke-6 dari 8 bersaudara
+                </p>
+
+                <p>
+                    Amelia memiliki 5 kakak dan 2 adik.
+                </p>
+
+            </div>
+
+            <table class="saudara">
+
+                <tr>
+                    <th>Urutan</th>
+                    <th>Keterangan</th>
+                    <th>Jenis Kelamin</th>
+                </tr>
+
+                <tr>
+                    <td>1</td>
+                    <td>JELITA</td>
+                    <td>cewe</td>
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td>YOLENTA</td>
+                    <td>cewe</td>
+                </tr>
+
+                <tr>
+                    <td>3</td>
+                    <td>GUSTY</td>
+                    <td>cowo</td>
+                </tr>
+
+                <tr>
+                    <td>4</td>
+                    <td>OKY</td>
+                    <td>cowo</td>
+                </tr>
+
+                <tr>
+                    <td>5</td>
+                    <td>MELKI</td>
+                    <td>cowo</td>
+                </tr>
+
+                <tr>
+                    <td>6</td>
+                    <td>Amelia</td>
+                    <td>cewe</td>
+                </tr>
+
+                <tr>
+                    <td>7</td>
+                    <td>RIVIN</td>
+                    <td>cowo</td>
+                </tr>
+
+                <tr>
+                    <td>8</td>
+                    <td>JUNA</td>
+                    <td>cowo</td>
+                </tr>
+
+            </table>
+
+        </section>
+
+        <section id="teman-smp">
+
+            <h2>Teman-Teman SMP</h2>
+
+            <div class="teman-container">
+
+                <div class="teman">
+                    <h3>Wilda</h3>
+                    <h3>Yuni</h3>
+                    <h3>Lely</h3>
+
+            </div>
+
+        </section>
+
+
+         
+        <section id="teman-sma">
+
+            <h2>Teman-Teman SMA</h2>
+
+            <div class="teman-container">
+
+                <div class="teman">
+                    <h3>Silvi</h3>                
+                    <h3>Reva</h3>
+                    <h3>Kristin</h3>
+                    
+                </div>
+
+            </div>
+
+        </section>
+
+</body>
+</html>
