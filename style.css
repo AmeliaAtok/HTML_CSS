@@ -1,0 +1,172 @@
+/* HEADER - LINEAR GRADIENT */
+header {
+    background: linear-gradient(135deg, #4abd8f, #6abdcc, #82ccdd);
+    color:pink;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.header-content {
+    max-width: 900px;
+    margin: auto;
+}
+
+header h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    background-color: yellow;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 3px 10pxr red(0, 0, 0, 0.12);
+}
+
+nav a {
+    color: #bd4a50;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 18px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #4a69bd;
+    color: purple;
+    transform: translateY(-3px);
+}
+
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 35px auto;
+}
+
+
+.card {
+    background-color: rgb(41, 3, 23);
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 16px;
+    box-shadow: 0 5px 18px rgba(11, 3, 116, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px green(20, 20, 20, 0.15);
+}
+
+.card h2 {
+    color:Brown#4a69bd;
+    text-align: center;
+    margin-bottom: 25px;
+    padding-bottom: 12px;
+    border-bottom: 3px solid #4a69bd;
+}
+
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.photo-box {
+    flex-shrink: 0;
+}
+
+.profile img {
+    width: 210px;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 6px solid orange#4a69bd;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s ease;
+}
+
+.profile img:hover {
+    transform: scale(1.05) rotate(2deg);
+}
+
+.biodata {
+    flex: 1;
+}
+
+.biodata p {
+    padding: 7px 0;
+    border-bottom: 1px solid yellow#eeeeee;
+}
+
+.biodata strong {
+    display: inline-block;
+    width: 150px;
+    color: #bd4a4c;
+}
+
+/* GRID */
+.friends {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.friend {
+    background: linear-gradient(135deg, #056fc6, #190116);
+    border: 1px solid #4f0cbc;
+    border-radius: 12px;
+    padding: 25px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.friend:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(199, 5, 5, 0.12);
+}
+
+.friend h3 {
+    color: #59045f;
+    margin-bottom: 12px;
+}
+
+.friend ul {
+    padding-left: 20px;
+}
+
+.friend li {
+    margin: 8px 0;
+}
+
+/* FAMILY */
+.family-summary {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.family-summary h3 {
+    color: #05184b;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
