@@ -1,14 +1,41 @@
-/* HEADER - LINEAR GRADIENT */
-header {
-    background: linear-gradient(135deg, #4abd8f, #6abdcc, #82ccdd);
-    color:pink;
-    text-align: center;
-    padding: 60px 20px;
+/* =========================
+   CSS RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.header-content {
-    max-width: 900px;
-    margin: auto;
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1d8615;
+    color: #701414;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   HEADER
+   LINEAR GRADIENT
+========================= */
+
+header {
+    background: linear-gradient(
+        135deg,
+        #0c6e47,
+        #18616e,
+        #134853
+    );
+
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
 }
 
 header h1 {
@@ -21,69 +48,118 @@ header p {
 }
 
 
+/* =========================
+   NAVIGASI
+   FLEXBOX
+========================= */
+
 nav {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+
     gap: 8px;
-    background-color: yellow;
+
+    background-color: #381010;
     padding: 15px;
+
     position: sticky;
     top: 0;
+
     z-index: 100;
-    box-shadow: 0 3px 10pxr red(0, 0, 0, 0.12);
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
 }
 
 nav a {
     color: #bd4a50;
+
     text-decoration: none;
+
     font-weight: bold;
+
     padding: 10px 18px;
+
     border-radius: 20px;
+
     transition: all 0.3s ease;
 }
 
 nav a:hover {
-    background-color: #4a69bd;
-    color: purple;
+    background-color: #294cad;
+
+    color: rgb(106, 12, 12);
+
     transform: translateY(-3px);
 }
 
 
+/* =========================
+   CONTAINER
+========================= */
+
 .container {
     width: 90%;
     max-width: 1100px;
+
     margin: 35px auto;
 }
 
 
+/* =========================
+   CARD
+   BOX SHADOW
+========================= */
+
 .card {
-    background-color: rgb(41, 3, 23);
+    background-color: rgb(44, 153, 11);
+
     padding: 30px;
+
     margin-bottom: 30px;
+
     border-radius: 16px;
-    box-shadow: 0 5px 18px rgba(11, 3, 116, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    box-shadow:
+        0 5px 18px rgba(15, 70, 94, 0.12);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
 }
 
 .card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 25px green(20, 20, 20, 0.15);
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.18);
 }
 
 .card h2 {
-    color:Brown#4a69bd;
+    color: #4a69bd;
+
     text-align: center;
+
     margin-bottom: 25px;
+
     padding-bottom: 12px;
-    border-bottom: 3px solid #4a69bd;
+
+    border-bottom:
+        3px solid #4a69bd;
 }
 
 
+/* =========================
+   DATA DIRI
+   FLEXBOX
+========================= */
+
 .profile {
     display: flex;
+
     align-items: center;
+
     gap: 40px;
 }
 
@@ -94,15 +170,24 @@ nav a:hover {
 .profile img {
     width: 210px;
     height: 210px;
+
     object-fit: cover;
+
     border-radius: 50%;
-    border: 6px solid orange#4a69bd;
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
-    transition: transform 0.4s ease;
+
+    border: 6px solid #4abd8f;
+
+    box-shadow:
+        0 6px 18px rgba(0, 0, 0, 0.2);
+
+    transition:
+        transform 0.4s ease;
 }
 
 .profile img:hover {
-    transform: scale(1.05) rotate(2deg);
+    transform:
+        scale(1.05)
+        rotate(2deg);
 }
 
 .biodata {
@@ -111,62 +196,434 @@ nav a:hover {
 
 .biodata p {
     padding: 7px 0;
-    border-bottom: 1px solid yellow#eeeeee;
+
+    border-bottom:
+        1px solid #eeeeee;
 }
 
 .biodata strong {
     display: inline-block;
+
     width: 150px;
-    color: #bd4a4c;
+
+    color: #bd4a50;
 }
 
-/* GRID */
-.friends {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 25px;
+
+/* =========================
+   TABLE
+========================= */
+
+.table-wrapper {
+    width: 100%;
+
+    overflow-x: auto;
 }
 
-.friend {
-    background: linear-gradient(135deg, #056fc6, #190116);
-    border: 1px solid #4f0cbc;
-    border-radius: 12px;
-    padding: 25px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    min-width: 700px;
 }
 
-.friend:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 8px 20px rgba(199, 5, 5, 0.12);
+th,
+td {
+    border: 1px solid #e84c4c;
+
+    padding: 12px;
+
+    text-align: center;
 }
 
-.friend h3 {
-    color: #59045f;
-    margin-bottom: 12px;
+th {
+    background:
+        linear-gradient(
+            135deg,
+            #00154e,
+            #093fb3
+        );
+
+    color: white;
 }
 
-.friend ul {
-    padding-left: 20px;
+tbody tr:nth-child(even) {
+    background-color: #eef4ff;
 }
 
-.friend li {
-    margin: 8px 0;
+tbody tr {
+    transition:
+        transform 0.2s ease,
+        background-color 0.2s ease;
 }
 
-/* FAMILY */
+tbody tr:hover {
+    background-color: #dce9ff;
+
+    transform: scale(1.01);
+}
+
+.highlight {
+    font-weight: bold;
+
+    background-color:
+        #d00ccd !important;
+
+    color: white;
+}
+
+
+/* =========================
+   KELUARGA
+========================= */
+
 .family-summary {
     text-align: center;
+
     margin-bottom: 25px;
 }
 
 .family-summary h3 {
     color: #05184b;
+
     font-size: 24px;
+
     margin-bottom: 5px;
 }
 
 
-.table-wrapper {
-    width: 100%;
-    overflow-x: auto;
+/* FOTO KELUARGA */
+
+.family-photo {
+    display: flex;
+
+    justify-content: center;
+
+    margin-bottom: 25px;
+}
+
+.family-photo img {
+    width: 80%;
+    max-width: 700px;
+
+    height: 300px;
+
+    object-fit: cover;
+
+    border-radius: 15px;
+
+    border: 5px solid #396b57;
+
+    box-shadow:
+        0 6px 20px rgba(0, 0, 0, 0.2);
+
+    transition:
+        transform 0.3s ease;
+}
+
+.family-photo img:hover {
+    transform: scale(1.03);
+}
+
+
+/* =========================
+   TEMAN SMP DAN SMA
+   GRID
+========================= */
+
+.friends {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.friend {
+    background:
+        linear-gradient(
+            135deg,
+            #056fc6,
+            #190116
+        );
+
+    border:
+        1px solid #4f0cbc;
+
+    border-radius: 12px;
+
+    padding: 20px;
+
+    text-align: center;
+
+    color: white;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.friend:hover {
+    transform:
+        translateY(-8px)
+        scale(1.02);
+
+    box-shadow:
+        0 8px 20px
+        rgba(199, 5, 5, 0.3);
+}
+
+
+/* FOTO TEMAN */
+
+.friend img {
+    width: 150px;
+    height: 150px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border:
+        5px solid rgb(94, 9, 9);
+
+    margin-bottom: 15px;
+
+    transition:
+        transform 0.3s ease;
+}
+
+.friend img:hover {
+    transform:
+        scale(1.08);
+}
+
+.friend h3 {
+    color: #390505;
+
+    margin-bottom: 8px;
+}
+
+.friend p {
+    color: #6e1a1a;
+}
+
+
+/* =========================
+   TEMAN / KAKAK DI JOGJA
+   GRID
+========================= */
+
+.jogja-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.jogja-card {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ffeaa7,
+            #fab1a0
+        );
+
+    padding: 20px;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 5px 15px
+        rgba(0, 0, 0, 0.12);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.jogja-card:hover {
+    transform:
+        translateY(-7px);
+
+    box-shadow:
+        0 10px 22px
+        rgba(0, 0, 0, 0.2);
+}
+
+.jogja-card img {
+    width: 100px;
+    height: 100px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border:
+        4px solid white;
+
+    flex-shrink: 0;
+
+    transition:
+        transform 0.3s ease;
+}
+
+.jogja-card img:hover {
+    transform:
+        scale(1.1)
+        rotate(3deg);
+}
+
+.jogja-card h3 {
+    color: #4a2c2a;
+
+    margin-bottom: 5px;
+}
+
+.jogja-card p {
+    color: #5f3d3a;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background:
+        linear-gradient(
+            135deg,
+            #7086c1,
+            #6a89cc
+        );
+
+    color: white;
+
+    text-align: center;
+
+    padding: 25px 15px;
+}
+
+footer p {
+    margin: 4px;
+}
+
+
+/* =========================
+   RESPONSIVE
+   TABLET
+========================= */
+
+@media (max-width: 768px) {
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    .profile {
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+    .biodata {
+        width: 100%;
+    }
+
+    .biodata strong {
+        display: block;
+
+        width: auto;
+
+        margin-bottom: 2px;
+    }
+
+    .friends {
+        grid-template-columns: 1fr;
+    }
+
+    .jogja-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .family-photo img {
+        width: 100%;
+        height: 250px;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    nav a {
+        padding: 8px 12px;
+
+        font-size: 14px;
+    }
+}
+
+
+/* =========================
+   RESPONSIVE
+   HP
+========================= */
+
+@media (max-width: 480px) {
+
+    header {
+        padding: 40px 15px;
+    }
+
+    header h1 {
+        font-size: 26px;
+    }
+
+    header p {
+        font-size: 15px;
+    }
+
+    .profile img {
+        width: 160px;
+        height: 160px;
+    }
+
+    .container {
+        width: 94%;
+    }
+
+    .card {
+        padding: 16px;
+    }
+
+    .family-photo img {
+        height: 200px;
+    }
+
+    .friend img {
+        width: 130px;
+        height: 130px;
+    }
+
+    .jogja-card {
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+    .jogja-card img {
+        width: 130px;
+        height: 130px;
+    }
 }
